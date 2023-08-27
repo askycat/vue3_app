@@ -1,9 +1,8 @@
 /** 加载插件 */
 export function loadPulgins(app) {
-    const modules = import.meta.glob('@/plugins/*.js')
+    const modules = import.meta.glob('@/plugins/*.js', { eager: true });
     for (const path in modules) {
-        modules[path]().then(module => {
-            module.default(app)
-        })
+        const plugin = modules[path];
+        plugin.default(app);
     }
 }

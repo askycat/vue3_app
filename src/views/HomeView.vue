@@ -1,6 +1,5 @@
 <script setup>
   import { onMounted,inject } from 'vue'
-  import { NButton } from 'naive-ui'
   import http from '../utils/axios'
 
   var http2=inject('http');
@@ -17,6 +16,7 @@
 </script>
 
 <template>
+asd
   <peter></peter>
   <input id="foo" value="https://github.com/zenorocha/clipboard.js.git">
   <n-button @click="getB">copy</n-button>

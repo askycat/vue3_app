@@ -8,6 +8,7 @@ import router from './router'
 import { loadComponents } from "./components"
 import {loadPulgins} from './plugins'
 import { loadDirectives } from "./directives"
+import naive  from 'naive-ui'
 
 //样式模块
 // https://unocss.dev/interactive/
@@ -15,9 +16,10 @@ import 'virtual:uno.css'
 
 const app = createApp(App)
 
-loadComponents(app)
+
 loadPulgins(app)
 loadDirectives(app)
+loadComponents(app)
 
 app.use(createPinia())
 app.use(router)
