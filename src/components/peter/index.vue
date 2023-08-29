@@ -1,6 +1,6 @@
 <template>
     <div>
-peter
+        peter123123
     </div>
 </template>
 
@@ -8,6 +8,4 @@ peter
 
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
