@@ -1,5 +1,5 @@
 <template>
-  <n-menu :options="menuOptions" :default-expanded-keys="defaultExpandedKeys" accordion />
+  <n-menu :options="menuOptions" :default-expanded-keys="defaultExpandedKeys" accordion bordered/>
 </template>
   
 <script>
